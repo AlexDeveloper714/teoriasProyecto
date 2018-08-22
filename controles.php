@@ -5,35 +5,6 @@
 require_once 'database.php';
 $db2 = new database();
 //Loguearse OK
-// controles sistemas (ver codigo database para entender el dinamismo)
-// ver database PHP y usar codigo debajo para mayor detenimiento...
-// permite dinamismo consultas query...
-
-/* parte del codigo necesario para usar rutas de path y crear carpeta 
-	con imagenes /img y guardar imagenes subidas
-    $db2->conectar();
-    $foto = $_FILES["file"]["name"];
-    $trozos = explode(".", $foto);
-    $exten = $_POST ['cedula'] . "." . end($trozos);
-    $ruta = $_FILES["file"]["tmp_name"];
-    $destino = "img/" . $foto;
-    $destino2 = "img/" . $exten;
-    copy($ruta, $destino);
-    rename($destino, $destino2);
-    if ($db2->verificarIdClientes($_POST ['cedula'], "clientes") > 0) {
-        echo "<h1>
-           Cedula ya registrada, retrocediendo...
-       </h1>";
-        echo "<script type=\"text/javascript\">
-            setTimeout(function(){ history.go(-1); },500);
-       </script>";
-        exit;
-    } else {
-        $db2->insertar(array($_POST ['cedula'], $_POST['nombre'], $_POST['apellido'],
-            $_POST['genero'], $_POST ['fecha'], $_POST['correo'], $_POST['hijos'], $destino2), "clientes");
-        require 'index.php';
-    } */
-
 if (isset($_POST['entrarSistema'])) {
     $db2->conectarDB();
     $camposReq = ["*"];
