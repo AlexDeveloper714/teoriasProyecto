@@ -2,6 +2,7 @@
 <?php
 @session_start();
 ?>
+/* prueba básica update */
 <html>
     <head>
         <meta charset="UTF-8">

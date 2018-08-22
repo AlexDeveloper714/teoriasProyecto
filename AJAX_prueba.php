@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+/* pagina de prueba de AJAX */
 <html>
     <style>
         table,th,td {

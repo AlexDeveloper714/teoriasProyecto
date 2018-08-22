@@ -1,3 +1,4 @@
+/* ejemplo post PHP */
 <table>
     <thead>
         <tr>

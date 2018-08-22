@@ -4,6 +4,18 @@
 @session_start();
 require_once 'database.php';
 $db2 = new database();
+
+/* 	Lineas de codigo que permiten obtener path de imagenes o archivos
+	y hacer copia de los mismos en la carpeta img
+	$foto = $_FILES["file"]["name"];
+    $trozos = explode(".", $foto);
+    $exten = $_POST ['cedula'] . "." . end($trozos);
+    $ruta = $_FILES["file"]["tmp_name"];
+    $destino = "img/" . $foto;
+    $destino2 = "img/" . $exten;
+    copy($ruta, $destino);
+    rename($destino, $destino2); */
+
 //Loguearse OK
 if (isset($_POST['entrarSistema'])) {
     $db2->conectarDB();

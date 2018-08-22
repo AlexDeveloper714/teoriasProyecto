@@ -6,6 +6,7 @@
 <?php
 @session_start();
 ?>
+/* pagina de errores */
 <html lang="en">
 
     <head>
