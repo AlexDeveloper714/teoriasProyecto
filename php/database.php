@@ -1,13 +1,13 @@
 <?php
-// mantener datos sesion 
+// mantener datos sesion
 @session_start();
 
 // codigo base de datos OJO
 // si faltan cosas, por favor detallenlas
-// las consultas dinamicas se realizan con un array 
+// las consultas dinamicas se realizan con un array
 // que contenga los atributos de las tablas
 // EJ tabla usuarios con atributos: nombre, apellido, telefono
-// aun asi, es facil entender los nombres de los array listados 
+// aun asi, es facil entender los nombres de los array listados
 // y el cambio en el codigo deberia ser simple
 class database {
 
@@ -72,6 +72,7 @@ class database {
                 }
             }
         }
+
         $actualizar = substr($actualizar, 0, -5) . ";";
         $query = $actualizar;
         mysqli_query($this->link, $query)or die("la consulta fallo (insertar)" . mysqli_error($this->link));
